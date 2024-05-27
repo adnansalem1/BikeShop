@@ -8,8 +8,8 @@ import java.util.List;
 @RestController
 public class HomeController {
 
-    @GetMapping("/Anzeigen")
-    public List<Anzeige> Anzeigen() {
+    @GetMapping("/anzeigen")
+    public List<Anzeige> anzeigen() {
         Anzeige anzeige1 = new Anzeige("Test 1", "Test", 2.50);
         Anzeige anzeige2 = new Anzeige("Test 2 ", "Test", 2.50);
         Anzeige anzeige3 = new Anzeige("Test 3", "Test", 2.50);
