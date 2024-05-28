@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "https://bikeshop-aluz.onrender.com")
+@CrossOrigin(origins = "https://bikeshopfrontend.onrender.com")
 public class HomeController {
 
     @GetMapping("/anzeigen")
