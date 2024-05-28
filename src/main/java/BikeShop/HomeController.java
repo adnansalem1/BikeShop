@@ -1,11 +1,13 @@
 package BikeShop;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "https://bikeshop-aluz.onrender.com")
 public class HomeController {
 
     @GetMapping("/anzeigen")
