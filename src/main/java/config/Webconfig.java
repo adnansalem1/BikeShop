@@ -15,9 +15,7 @@ public class Webconfig implements WebMvcConfigurer {
                 .allowedMethods("")
                 .allowedOrigins(
                         "http://localhost:8080/",
-                        "https://bikeshop-aluz.onrender.com"
+                        "https://bikeshopfrontend.onrender.com"
                 );
-
     }
-
 }
