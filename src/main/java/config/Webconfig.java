@@ -11,11 +11,8 @@ public class Webconfig implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/*")
-                .allowedMethods("")
-                .allowedOrigins(
-                        "http://localhost:8080/",
-                        "https://bikeshopfrontend.onrender.com"
-                );
+        registry.addMapping("/**")
+                .allowedMethods("*")
+                .allowedOrigins("http://localhost:8080", "https://bikeshopfrontend.onrender.com");
     }
 }
