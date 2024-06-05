@@ -1,0 +1,11 @@
+### GET request to example server
+POST http://localhost:8080/anzeigen
+Content-Type: application/json
+
+{
+  "name": "Test",
+  "beschreibung": "Test description",
+  "preis": 2.0
+
+}
+
