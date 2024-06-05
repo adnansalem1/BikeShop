@@ -19,10 +19,11 @@ public class Anzeige {
     public Anzeige() {
     }
 
-    public Anzeige(String name, String beschreibung, double preis) {
+    public Anzeige(String name, String beschreibung, double preis , Long id) {
         this.name = name;
         this.beschreibung = beschreibung;
         this.preis = preis;
+        this.id = id;
     }
 
     public Long getId() {

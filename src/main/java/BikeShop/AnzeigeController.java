@@ -1,9 +1,7 @@
-package controller;
+package BikeShop;
 
-import BikeShop.Anzeige;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import service.AnzeigeService;
 
 import java.util.List;
 

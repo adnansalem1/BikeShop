@@ -1,7 +1,5 @@
-package service;
+package BikeShop;
 
-import BikeShop.Anzeige;
-import repository.AnzeigeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +8,8 @@ import java.util.List;
 @Service
 public class AnzeigeService {
 
-    private AnzeigeRepository anzeigeRepository;
+    @Autowired
+    AnzeigeRepository anzeigeRepository;
 
     public Anzeige save(Anzeige anzeige) {
         return anzeigeRepository.save(anzeige);
