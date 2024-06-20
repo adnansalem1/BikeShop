@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "https://bikeshopfrontend.onrender.com")
+@CrossOrigin(origins = {"http://localhost:5173", "https://bikeshopfrontend.onrender.com"})
 @RequestMapping("/anzeigen")
 public class AnzeigeController {
 
