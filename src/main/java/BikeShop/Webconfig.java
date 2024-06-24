@@ -13,7 +13,7 @@ public class Webconfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         // Erlaubt CORS-Anfragen für alle URLs vom angegebenen Origin
         registry.addMapping("/**") // Dies ermöglicht CORS für alle Pfade in Ihrer Anwendung
-                .allowedOrigins("http://localhost:3000") // Erlaubt Zugriffe von Ihrem Frontend-Server
+                .allowedOrigins("http://localhost:3000" , "https://bikeshopfrontend.onrender.com" ) // Erlaubte Zugriffe von Ihrem Frontend-Server
                 .allowedMethods("GET", "POST", "PUT", "DELETE") // Erlaubt spezifische HTTP-Methoden
                 .allowedHeaders("*") // Erlaubt alle Headers
                 .allowCredentials(true); // Erlaubt Credentials wie Cookies, Authorization-Header etc.
